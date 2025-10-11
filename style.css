@@ -2,15 +2,14 @@ body {
   background-color: white;
   font-family: "Roboto", sans-serif;
   color: #333;
-  margin: 0;    
+  margin: 0;
 }
 
 .conteiner {
-  width: 1600px;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1600px;
+  width: 100%;       
+  margin: 0 auto;
+  padding: 15px;
 }
 
 .logo {
@@ -30,7 +29,7 @@ nav ul {
   gap: 70px;
   position: relative;
   left: 150px;
-  bottom:  35px;
+  bottom: 35px;
 
 
 }
@@ -69,11 +68,11 @@ nav ul {
 }
 
 .hello {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 4px;
-    height: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 4px;
+  height: 38px;
 }
 
 .main-btn {
@@ -89,8 +88,8 @@ nav ul {
 .main-btn:hover {
   background-color: #2196f3;
   color: #FFFFFF;
-  transition: all 0.3s ease ;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio {
@@ -106,12 +105,12 @@ nav ul {
   overflow: hidden;
   text-align: left;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 rgba(0,0,0,0); /* без тіні спочатку */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .card:hover {
-  transform: translateY(-5px); /* трохи піднімається */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* тінь при наведенні */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -276,4 +275,49 @@ nav ul {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+form {
+  position: relative;
+  bottom: 30px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.95);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
 }
