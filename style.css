@@ -327,16 +327,14 @@ form {
   text-decoration: none;
   color: #212121;
   font-weight: 500;
-  padding-bottom: 5px; /* трохи місця для лінії */
+  padding-bottom: 5px;
   transition: color 0.3s ease;
 }
 
-/* Зміна кольору при наведенні */
 .nav-list a:hover {
   color: #2196f3;
 }
 
-/* Створюємо лінію */
 .nav-list a::after {
   content: "";
   position: absolute;
@@ -349,7 +347,6 @@ form {
   border-radius: 2px;
 }
 
-/* При наведенні лінія з’являється зліва направо */
 .nav-list a:hover::after {
   width: 100%;
 }
