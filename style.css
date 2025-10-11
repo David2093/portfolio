@@ -321,3 +321,35 @@ form {
 .card:hover img {
   transform: scale(1.1);
 }
+
+.nav-list a {
+  position: relative;
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+  padding-bottom: 5px; /* трохи місця для лінії */
+  transition: color 0.3s ease;
+}
+
+/* Зміна кольору при наведенні */
+.nav-list a:hover {
+  color: #2196f3;
+}
+
+/* Створюємо лінію */
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #2196f3;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+/* При наведенні лінія з’являється зліва направо */
+.nav-list a:hover::after {
+  width: 100%;
+}
