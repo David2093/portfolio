@@ -300,11 +300,10 @@ form {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
   opacity: 0;
   transition: opacity 0.4s ease;
   font-size: 14px;
-  line-height: 1.5;
+  
 }
 
 .card:hover .overlay {
